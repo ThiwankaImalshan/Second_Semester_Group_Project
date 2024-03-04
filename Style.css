@@ -1,0 +1,124 @@
+*{
+ margin: 0;
+ text-decoration: none;
+ box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root{
+ 
+--primary-color:black;
+--Secondary1-color:#007bff;
+--third-color:#33ddff;
+--Fourth-color:#33ddff;
+--Fifth-color:#44ffdd;
+--sixth--color:#fff;
+--Seventh--color:#dce7b1;
+
+
+}
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background:var(--sixth--color);
+}
+::-webkit-scrollbar-thumb {
+    background:var(--Secondary1-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+body{
+    overflow-x: scroll;
+}
+header{
+
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+}
+.nav{
+    position: relative;
+    top: 0;
+     background: transparent;
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+     font-weight: 500;
+     text-decoration: none;
+     height: 20vh;
+     list-style: none;
+     
+     
+      
+}
+.scroll-button a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color:var(--sixth--color);
+    background:var(--Secondary1-color);
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    display: none;
+}
+.Logo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 22px;
+}
+.main_logo{
+    left: 5px;
+}
+#Second_logo img{
+    position: relative;
+    top: 15px;
+}
+.menu{
+   
+       display: flex;
+       justify-content:space-evenly;
+       align-items: center;
+       width: 60%;
+       text-transform: uppercase;
+       font-size:20px ;
+       margin-right: 10px;
+
+
+}
+.menu .menu_items{
+              margin-left: 30px;
+              text-decoration: none;
+              color:var(--primary-color);
+              transition: all 0.5s ease;
+}
+.menu .menu_items:hover{
+    color: var(--Secondary1-color);
+    letter-spacing: 2px;
+}
+.menu .menu_items1  >i{
+    position: relative;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 10px;
+    top:-7px;
+    margin-left: 12px;
+}
+.menu .menu_items>i:hover{
+    transform: scale(1.1);
+}
+
+header.sticky{
+    background:var(--Secondary1-color);
+  }
+
+  
+
+  @media only screen and (max-width: 760px){
+  }
