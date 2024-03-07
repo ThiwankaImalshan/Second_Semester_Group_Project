@@ -137,3 +137,16 @@ header.sticky{
     padding: 10px 0px;
     letter-spacing: 3px;
   }
+  .btn-order button{
+    margin: 50px 0px;
+    background-color: var(--Secondary1-color);
+    border-color: transparent;
+    border-radius: 5%;
+    padding: 7px 15px;
+    font-size: larger;
+    font-weight: bold;
+ }
+ .btn-order a{
+    color: var(--sixth--color);
+    text-decoration: none;
+ }
