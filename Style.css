@@ -126,6 +126,7 @@
        align-items: center;
        justify-content: space-around;
        background-image: linear-gradient(to right,skyblue 28%,white 72%);
+       height: 870px;
    
      }
      .container1-head h1{
