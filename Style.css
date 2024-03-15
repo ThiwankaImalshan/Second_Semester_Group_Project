@@ -3,18 +3,25 @@
     text-decoration: none;
     box-sizing: border-box;
      scroll-behavior: smooth;
-   }
+     font-family:  SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;;
+   list-style: none;
+    }
    :root{
     
    --primary-color:black;
    --Secondary1-color:#007bff;
    --third-color:#33ddff;
    --Fourth-color:#33ddff;
-   --Fifth-color:#44ffdd;
+   --Fifth-color:skyblue;
    --sixth--color:#fff;
    --Seventh--color:#dce7b1;
+   --fotercontent-color:orange;
+   --selection-color:rgb(223, 207, 207);
    
    
+   }
+   ::selection{
+    background-color: var(--selection-color);
    }
    /* Custom Scroll Bar CSS */
    ::-webkit-scrollbar {
@@ -86,8 +93,9 @@
           justify-content:space-evenly;
           align-items: center;
           width: 60%;
-          font-size:20px ;
+          font-size:24px ;
           margin-right: 10px;
+          font-family: kodchasan;
    
    
    }
@@ -114,12 +122,13 @@
    }
    
    header.sticky{
-       background:skyblue;
+       background:var(--Fifth-color);
    }
    
-     @media only screen and (max-width: 760px){
-     }
-   
+    
+   main{
+    margin-bottom:7rem ;
+   }
      .container1{
        display: flex;
        flex-direction: row;
@@ -127,7 +136,7 @@
        justify-content: space-around;
        background-image: linear-gradient(to right,skyblue 28%,white 72%);
        height: 870px;
-   
+      
      }
      .container1-head h1{
        font-size: 70px;
@@ -147,6 +156,7 @@
        font-size: larger;
        font-weight: bold;
     }
+    
     .btn-order a{
        color: var(--sixth--color);
        text-decoration: none;
@@ -154,4 +164,160 @@
     .container1 img{
        margin-top: 200px;
        margin-bottom: 50px;
+    }
+.listcontainner{
+   margin: 5px;
+    padding: 5px;
+}
+.listcontainner2 h2{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 4rem;
+
+}
+.listcontainner3{
+    margin: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    
+
+}
+
+.listcontainner3 .listitems{
+    background-color:var(--sixth--color);
+    width: 250px;
+    height: 325px;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+
+}
+.listcontainner3 .listitems::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 30px;
+    filter: blur(8px) brightness(1.5);
+    transform: translateY(1%)translateX(1%);
+    z-index: -1;
+}
+.listitems2{
+    width:241px;
+    height: 292px;
+    background-color:transparent;
+    border-radius: 30px;
+    padding: 10px;
+    overflow: hidden;
+
+}
+.listitems2:hover{
+    transition: ease-out 0.2s;
+    padding: 15px;
+    transform: scale(1.1);
+    color:var(--Fourth-color);
+    border-radius: 35px;
+    
+    
+}
+.listitems2 img{
+    width: 100%;
+    
+    height: 14rem;
+    border-radius: 10px;
+}
+ 
+.listitems2 .letter{
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.listitems2 .letter h3{
+    font-size: 22px;
+    letter-spacing: 1.1;
+}
+
+footer{
+    bottom: 0;
+    position: static;
+    margin-top: 10px;
+    background: linear-gradient(rgb(209, 202, 202) 10%,rgb(153, 147, 147) 50%,rgb(163, 156, 156) 100%);
+     width: 100%;
+     height: 70vh;
+     
+}
+.footer{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .topicc{
+    text-align: left;
+}
+.topicc .suptopic{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+
+
+}
+.topicc .Est{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+#move1{
+    position: relative;
+    top: 50px;
+
+}
+.Footermain_logo1 img{
+    position: relative;
+    left: -29px;
+       width: 8rem;
+       height: 10rem;
+
+}
+.Footermain_logo2 img{
+    position: relative;
+       width:6rem;
+       height: 2rem;
+
+
+}
+.topic2{
+    margin-top: 30px;
+    font-size:18px ;
+}
+.topic2 p{
+       margin-bottom: 20px;
+       
+
+}
+.topic2 p #company{
+    color:var(--fotercontent-color);
+    cursor: pointer;
+}
+.topic2 p >#company #comapanyU{
+    border-bottom: 1px solid var(--fotercontent-color);
+}
+.topic2 p a{
+    color:var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+.topic2 p a:hover{
+    transition: all ease-in 0.2s;
+    color: var(--Fourth-color);
+}
+ @media only screen and (max-width: 760px){
+
+ 
+
+
     }
