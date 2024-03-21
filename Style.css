@@ -14,8 +14,11 @@
    --Fourth-color:#33ddff;
    --Fifth-color:skyblue;
    --sixth--color:#fff;
+   --content--clor:#c2c2c2;
    --Seventh--color:#dce7b1;
-   --fotercontent-color:orange;
+   --fotercontent-color:#ff0200;
+   --fotercontent2-color:#4c4441;
+   --fotercontent3-color:#655d5e;
    --selection-color:rgb(223, 207, 207);
    
    
@@ -45,7 +48,7 @@
    header{
    
        position:fixed;
-       z-index: 2;
+       z-index: 999;
        width: 100%;
    }
    .nav{
@@ -156,7 +159,10 @@
        font-size: larger;
        font-weight: bold;
     }
-    
+    .btn-order button:hover{
+        background-color: transparent;
+        border: 2px solid var(--Secondary1-color);
+    }
     .btn-order a{
        color: var(--sixth--color);
        text-decoration: none;
@@ -164,6 +170,9 @@
     .container1 img{
        margin-top: 200px;
        margin-bottom: 50px;
+    }
+    .promotion{
+        margin: 5px;
     }
 .listcontainner{
    margin: 5px;
@@ -188,7 +197,7 @@
 
 .listcontainner3 .listitems{
     background-color:var(--sixth--color);
-    width: 250px;
+    width: 260px;
     height: 325px;
     border-radius: 30px;
     padding: 5px;
@@ -207,7 +216,7 @@
     z-index: -1;
 }
 .listitems2{
-    width:241px;
+    width:251px;
     height: 292px;
     background-color:transparent;
     border-radius: 30px;
@@ -221,12 +230,9 @@
     transform: scale(1.1);
     color:var(--Fourth-color);
     border-radius: 35px;
-    
-    
 }
 .listitems2 img{
     width: 100%;
-    
     height: 14rem;
     border-radius: 10px;
 }
@@ -235,16 +241,18 @@
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
+    margin-top: 2px;
 }
+
 .listitems2 .letter h3{
-    font-size: 22px;
+    font-size: 21px;
     letter-spacing: 1.1;
 }
 
 footer{
     bottom: 0;
     position: static;
-    margin-top: 10px;
+    margin-top: 10rem;
     /* background: linear-gradient(rgb(209, 202, 202) 10%,rgb(153, 147, 147) 50%,rgb(163, 156, 156) 100%); */
     background-color: #EBE9E5;
      width: 100%;
@@ -271,6 +279,7 @@ footer{
 .topicc .Est{
     margin-top: 2rem;
     margin-bottom: 3rem;
+    color: var(--fotercontent2-color);
 }
 #move1{
     position: relative;
@@ -294,6 +303,7 @@ footer{
 .topic2{
     margin-top: 30px;
     font-size:18px ;
+    color: var(--fotercontent3-color);
 }
 .topic2 p{
        margin-bottom: 20px;
@@ -308,7 +318,7 @@ footer{
     border-bottom: 1px solid var(--fotercontent-color);
 }
 .topic2 p a{
-    color:var(--primary-color);
+    color:var(--fotercontent3-color);
     cursor: pointer;
     text-decoration: none;
 }
@@ -316,9 +326,65 @@ footer{
     transition: all ease-in 0.2s;
     color: var(--Fourth-color);
 }
+/*service*/
+.bottmSide{
+    margin-top: 7rem;
+}
+.service{
+    margin-top:12px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    margin-left: -10px;
+    
+
+}
+.service .serv_img{
+    position: relative;
+    left: 50px;
+    
+}
+.service .serv_img3 {
+    position: relative;
+    left:-15px ;
+}
+.service .serv_img2{
+    width: 100%;
+
+
+}
+.service figure figcaption{
+    position: relative;
+    top: -17rem;
+    padding-left: 7rem;
+    background-color:transparent;
+    width: 95%;
+    height:150px;
+    text-align: left;
+}
+.service figure figcaption h3{
+    color: #08366b;
+    font-weight: bold;
+    font-size: 43px;
+    margin-bottom: 15px;
+}
+.service figure figcaption p{
+    font-size: 23px;
+    padding: 8px;
+
+}
  @media only screen and (max-width: 760px){
 
- 
+ .listcontainner3{
+    display: grid;
+    grid-template-rows: 50%  50%;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+ }
 
 
     }
